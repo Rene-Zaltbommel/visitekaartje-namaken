@@ -1,0 +1,91 @@
+
+main{
+    display: flex;
+    max-width: 760px;
+    
+}
+
+article{
+    max-width: 330px;
+    margin-right: 15px;
+}
+
+/* onderstaande is de child-selector, toepassing kan denk ik beter maar dit is om te oefenen*/
+
+article >h3{ 
+    border-top: solid lightgrey;
+    border-left: solid lightgrey;
+    border-right: solid lightgrey;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+
+/* onderstaande is de only of type-selector, toepassing kan denk ik beter maar dit is om te oefenen*/
+
+article section:only-of-type{
+    border-left: solid lightgrey;
+    border-right: solid lightgrey;
+    color:grey;
+    padding-top: 5px;
+    padding-left: 15px;
+    font-weight: bold
+}
+
+
+img{
+    float: right;  
+    padding-right: 15px;     
+}
+
+p{
+    border-left: solid lightgrey;
+    border-right: solid lightgrey;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 25px;  
+}
+
+
+
+form{
+    border: solid lightgrey;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 5px;
+    text-align: center;    
+}
+
+input{
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Onderstaande is Attribute value selector, toepassing kan denk ik beter maar dit is om te oefenen*/
+
+input[type="reset"]{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: red;
+    font-weight: bold;
+    margin-left: -5px;
+    border-top-color: red;
+    border-right-color: red;
+    border-bottom-color: red;
+}
+
+input[type="submit"]{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: green;
+    font-weight: bold;
+    border-color: green;    
+}
